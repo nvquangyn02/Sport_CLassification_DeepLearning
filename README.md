@@ -6,7 +6,7 @@
 
 ## 📖 Overview
 
-This project builds a deep learning model to classify images of **100 different sports** using **transfer learning** and **fine-tuning**. It aims to achieve high classification accuracy (initially ~85%, improved to **95–98%**) on a custom dataset using models like MobileNetV2 and EfficientNetB0.
+This project unleashes a deep learning powerhouse to classify images of 100 different sports using transfer learning and fine-tuning. Powered by MobileNetV2, it aims to crush accuracy targets from ~85% to a stellar 95–98% on a custom dataset.
 
 ---
 
@@ -65,12 +65,7 @@ This project builds a deep learning model to classify images of **100 different 
   - Shift: 10%
   - Zoom: 10%
 
-### 3. EfficientNetB0 (Attempted)
 
-- Pre-trained model `EfficientNetB0-100-(224 X 224)-98.40.h5`
-- Error: `ValueError` due to `groups=1` (incompatible with TF 2.15+)
-
----
 
 ## 📈 Results
 
@@ -131,10 +126,6 @@ This project builds a deep learning model to classify images of **100 different 
 - **Imbalanced Data:**
   - Some classes had poor F1-scores
   - ✅ Plan: Use class weights or oversampling
-- **EfficientNetB0 Load Error:**
-  - ❌ `groups` param error in `DepthwiseConv2D`
-  - 🛠️ Solution: Downgrade TensorFlow or retrain model
-
 ---
 
 ## 🔜 Next Steps
